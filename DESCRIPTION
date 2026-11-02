@@ -1,0 +1,11 @@
+Package: tenniscareer
+Title: Tennis Career Matches and Age Gaps
+Version: 0.0.0.9000
+Authors@R: 
+    person("Zhecen", "Zhou", , "zhou0309@berkeley.edu", role = c("aut", "cre"))
+Description: Functions to get tennis career match data and plot age
+    differences between players and their opponents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
