@@ -1,4 +1,3 @@
-
 fetch_player_dob <- function(slug) {
   url <- paste0("https://www.tennisabstract.com/jsmatches/",
                 slug, ".js")
