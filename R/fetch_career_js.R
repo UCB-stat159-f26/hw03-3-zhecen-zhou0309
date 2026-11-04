@@ -1,4 +1,3 @@
-
 fetch_career_js <- function(slug) {
   url <- paste0("https://www.tennisabstract.com/jsmatches/",
                 slug, "Career.js")
