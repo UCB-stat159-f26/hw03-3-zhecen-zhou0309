@@ -1,0 +1,35 @@
+AI Documentation — STAT 159 HW03
+
+**AI Tool Used:** ChatGPT
+
+### 1. R Code Development
+
+I used ChatGPT as a coding assistant while developing my `tenniscareer` R package. It helped me organize my previous HW02 analysis into smaller, reusable R functions and suggested implementations for processing tennis match data.
+
+One example was `parse_opponent_age()`, where I needed to handle the different age formats used in WTA and ATP records. AI helped me develop the initial logic, and I checked the results using sample match records.
+
+### 2. R Comments and Documentation
+
+I also used ChatGPT to improve the readability of my R code, especially the comments explaining data processing decisions.
+
+For example, I added comments explaining why WTA and ATP opponent ages require different handling and why invalid observations are removed before plotting.
+
+AI also helped me write roxygen2 documentation, including `@param`, `@return`, and `@export`, for the package's public functions.
+
+### 3. Debugging and Testing
+
+During development, I encountered problems extracting players' birth dates from Tennis Abstract. ChatGPT helped me investigate the JavaScript files and identify the `dob` variable.
+
+It also helped me troubleshoot regular expression errors, reorganize plotting code, and develop unit tests using local mock data.
+
+I ran the commands in VS Code, inspected the outputs, and made changes when the original approaches did not work.
+
+### 4. Reproducibility
+
+AI assisted with organizing the README, installation instructions, test commands, and naming conventions.
+
+I focused on keeping functions short, documenting important decisions, and avoiding live server requests in automated tests.
+
+### 5. Personal Responsibility
+
+Although AI contributed to code suggestions, comments, and documentation, I was responsible for running the code, checking the results, and integrating the changes into my project. I also maintained the Git history through separate commits as the package developed.
