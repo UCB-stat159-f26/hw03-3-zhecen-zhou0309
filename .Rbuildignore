@@ -1,1 +1,4 @@
 ^LICENSE\.md$
+^ai_documentation\.txt$
+^figures$
+^instructions\.md$
