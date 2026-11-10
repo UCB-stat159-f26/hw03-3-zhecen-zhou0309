@@ -4,10 +4,10 @@ test_that("career JS data can be read from a local file", {
   on.exit(unlink(path))
 
   js <- paste0(
-    'var morematchmx = [',
-    '["19951030", "Canadian Open"],',
-    '["20010910", "Spain F10"]',
-    '];'
+    "var morematchmx = [",
+    "[\"19951030\", \"Canadian Open\"],",
+    "[\"20010910\", \"Spain F10\"]",
+    "];"
   )
   writeLines(js, path)
 
