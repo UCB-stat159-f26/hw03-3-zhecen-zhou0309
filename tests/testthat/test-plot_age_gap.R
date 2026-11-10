@@ -39,3 +39,16 @@ test_that("age gap plot returns a ggplot object", {
   expect_s3_class(p, "ggplot")
   expect_equal(nrow(p$data), 3L)
 })
+
+test_that("age gap plot can be rendered", {
+  matches <- data.frame(
+    player_age = c(18, 20, 22),
+    age_gap = c(-3, 1, 4),
+    result = c("L", "W", "W")
+  )
+
+  p <- plot_age_gap(matches)
+
+  # Building the plot also checks that aesthetics are evaluated correctly.
+  expect_no_error(ggplot2::ggplot_build(p))
+})

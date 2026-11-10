@@ -13,5 +13,5 @@ plot_age_gap(matches)
 A ggplot object.
 }
 \description{
-Create a scatter plot of player age and age differences.
+Create a NYT-style scatter plot of tennis career matches.
 }
