@@ -76,8 +76,6 @@ devtools::test()
 
 ## Personal Reflections
 
-## Personal Reflections
-
 One of the biggest challenges in HW03 was turning my previous Serena Williams analysis from HW02 into an R package that could work with different players. In HW02, I mainly focused on cleaning one dataset and producing the final visualization. This time, I needed to separate the process into smaller functions so that other people could reuse the code.
 
 The first problem I encountered was the difference between WTA and ATP match records. In the Tennis Abstract JavaScript files, female players' records store their opponents' dates of birth, while male players' records provide opponent ages directly. My original approach could not handle both formats in the same way. I eventually wrote `parse_opponent_age()` to distinguish between the two cases, which helped me understand why data processing functions need to account for differences in the source data.
@@ -90,4 +88,14 @@ Compared with HW02, this assignment made me think more about how someone else wo
 
 ## AI Documentation
 
-To be completed.
+I used ChatGPT as a coding assistant during the development of this R package. AI helped me organize my previous HW02 analysis into reusable functions, improve R comments, troubleshoot errors, and develop offline unit tests.
+
+One area where AI was particularly useful was R code documentation. I used its suggestions to write clearer comments explaining important processing decisions, such as why WTA and ATP opponent ages require different handling and why invalid observations are removed before plotting. AI also assisted with roxygen2 documentation for the two public functions, including their parameters, return values, and exports.
+
+During debugging, AI helped me investigate how Tennis Abstract stores player birth dates in JavaScript files. I tested the suggested approaches in VS Code, inspected the actual data, and revised the code when the initial solutions failed.
+
+AI also assisted with organizing the package structure, writing test cases using mock data, and improving the README. I ran the tests myself and checked the package using `devtools::check()`.
+
+I maintained the Git history through separate commits to document the development process. My goal was to keep the package readable, reproducible, and easy for other students to understand.
+
+A more detailed record of AI assistance is available in [ai_documentation.txt](ai_documentation.txt).
